@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <locale.h>
 
 int primo (int a, int b) {
 	int i;
@@ -14,16 +13,15 @@ int primo (int a, int b) {
 }
 
 int main(){
-	setlocale(LC_ALL, "portuguese_brazil");
 	
 	int i, j, n, x1, x2, y;
 	
-	printf("Digite um número inteiro par e maior do que dois:\n");
+	printf("Digite um numero inteiro par e maior do que dois:\n");
 	scanf("%d", &n);
 	
 	while(n != 0){
 		if (n % 2 != 0 || n == 2){
-			printf("\nNúmero inválido! Somente números pares maiores do que dois são aceitos:\n\n");
+			printf("\nNumero invalido! Somente numeros pares maiores do que dois sao aceitos:\n\n");
 		}
 		else{
 			for(i = 1; i <= n; i++){
@@ -35,10 +33,10 @@ int main(){
 				}
 			if (x1 + x2 == n) break;
 			}
-			printf("\nNúmero \t Decomposição:\n");
+			printf("\nNumero \t Decomposicao:\n");
 			printf("%d \t %d + %d\n\n", n, x1, x2);	
 		}
-		printf("Digite um número inteiro par e maior do que dois:\n");
+		printf("Digite um numero inteiro par e maior do que dois:\n");
 		scanf("%d", &n);	
 	}
 	return 0;
